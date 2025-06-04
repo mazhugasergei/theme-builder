@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path"
 
-const background = "#161717"
+const background = "#161616"
 const foreground = "#cccccc"
 const primary = "#66b49b"
 const secondary = "#9d9c9d"

@@ -26,7 +26,7 @@ npm run refresh:windsurf
 
 ### Manual Install
 
-#### 0. Clean the dist folder if needed
+#### 0. Clean the build if needed
 
 ```bash
 npm run clean
@@ -41,15 +41,15 @@ npm run build
 #### 2. Install the theme extension to all installed editors
 
 ```bash
-npm run install
+npm run apply
 ```
 
 Or individually:
 
 ```bash
-npm run install:code
-npm run install:cursor
-npm run install:windsurf
+npm run apply:code
+npm run apply:cursor
+npm run apply:windsurf
 ```
 
 #### Uninstall the theme extension from all installed editors
