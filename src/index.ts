@@ -256,6 +256,7 @@ const theme = {
         "support.type.primitive", // number, string, boolean, etc.
         "support.function.special", // built-ins like `setTimeout`, `require`
         "punctuation.definition",
+        "meta.brace",
       ],
       settings: { foreground: foreground },
     },
