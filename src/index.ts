@@ -299,7 +299,11 @@ const theme = {
       settings: { foreground: strings },
     },
     {
-      scope: ["comment"], // // comment or /* comment */
+      scope: [
+        "comment", // => // comment or /* comment */
+        "punctuation.section.embedded", // => {} in {/* */}
+        "punctuation.definition.comment", // => /* */ in {/* */}
+      ],
       settings: { foreground: comment, fontStyle: "italic" },
     },
   ],
