@@ -255,6 +255,7 @@ const theme = {
         "keyword.operator", // +, -, *, &&, ||, etc.
         "support.type.primitive", // number, string, boolean, etc.
         "support.function.special", // built-ins like `setTimeout`, `require`
+        "punctuation.definition",
       ],
       settings: { foreground: foreground },
     },
@@ -292,10 +293,10 @@ const theme = {
       ],
       settings: { foreground: secondary },
     },
-    // {
-    //   scope: ["string"],
-    //   settings: { foreground: strings },
-    // },
+    {
+      scope: ["constant.language"],
+      settings: { foreground: strings },
+    },
     {
       scope: ["comment"], // // comment or /* comment */
       settings: { foreground: comment, fontStyle: "italic" },
