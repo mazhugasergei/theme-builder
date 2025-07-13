@@ -291,6 +291,7 @@ const theme = {
         "keyword", // if, else, return, function, etc.
         "keyword.declaration", // const, let, function (overlap with storage.type.*)
         "entity.other.attribute-name", // class in `<div class="foo">`
+        "meta.type.parameters.ts string.quoted.double.ts", // "id" in Omit<MyType, "id">
       ],
       settings: { foreground: secondary },
     },
