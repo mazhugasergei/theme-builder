@@ -252,7 +252,6 @@ const theme = {
       scope: [
         "variable", // global scope for variables names
         "constant", // true, false, null, or user-defined consts
-        "keyword.operator", // +, -, *, &&, ||, etc.
         "support.type.primitive", // number, string, boolean, etc.
         "support.function.special", // built-ins like `setTimeout`, `require`
         "punctuation.definition",
@@ -275,6 +274,8 @@ const theme = {
     },
     {
       scope: [
+        "keyword.operator", // +, -, *, &&, ||, etc.
+
         "support.type.property-name", // object property name
         "meta.object-literal.key", // id in `{ id: value }`
         "meta.object-literal.key string", // "my-key" in `{ "my-key": value }`
