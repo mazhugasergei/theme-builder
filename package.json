@@ -4,7 +4,7 @@
   "displayName": "The Theme",
   "publisher": "mazhugasergei",
   "engines": {
-    "vscode": "^1.0.0"
+    "vscode": "*"
   },
   "contributes": {
     "themes": [
@@ -37,9 +37,9 @@
     "refresh": "npm run uninstall:code && npm run uninstall:cursor && npm run uninstall:windsurf && npm run clean && npm run build && npm run apply:code && npm run apply:cursor && npm run apply:windsurf"
   },
   "dependencies": {
-    "ts-node": "^10.9.2",
-    "rimraf": "^6.0.1",
-    "shx": "^0.4.0",
-    "vsce": "^2.15.0"
+    "rimraf": "6.0.1",
+    "shx": "0.4.0",
+    "ts-node": "10.9.2",
+    "vsce": "^1.97.0"
   }
 }
