@@ -1,6 +1,6 @@
 # The Theme
 
-![](./src/assets/images/screenshot.jpg)
+![](https://raw.githubusercontent.com/mazhugasergei/theme-builder/refs/heads/main/src/assets/images/screenshot.jpg)
 
 # Manual installation (theme builder)
 
