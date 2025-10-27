@@ -1,9 +1,7 @@
-# Build outputs
+# build outputs
 dist/
-*.vsix
-out/
 themes/
-the-theme-0.0.1.vsix
+theme.vsix
 
 # macOS system files
 .DS_Store
@@ -13,13 +11,11 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Node.js dependencies
+# dependencies
 node_modules/
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# logs
+*.log*
 
 # VSCode settings folder
 .vscode/
