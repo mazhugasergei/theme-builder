@@ -1,6 +1,6 @@
 {
   "name": "the-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "The Theme",
   "publisher": "mazhugasergei",
   "engines": {
@@ -21,11 +21,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf ./dist && rimraf ./themes",
-    "build": "ts-node src/index.ts && shx mkdir -p dist && vsce package --out ./dist/the-theme-0.0.1.vsix",
-    "install:code": "code --install-extension ./dist/the-theme-0.0.1.vsix || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m install:code failed')\"",
-    "install:cursor": "cursor --install-extension ./dist/the-theme-0.0.1.vsix || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m install:cursor failed')\"",
-    "install:windsurf": "windsurf --install-extension ./dist/the-theme-0.0.1.vsix || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m install:windsurf failed')\"",
+    "clean": "rimraf ./theme.vsix && rimraf ./themes",
+    "build": "ts-node src/index.ts && vsce package --out ./theme.vsix",
+    "install:code": "code --install-extension ./theme.vsix || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m install:code failed')\"",
+    "install:cursor": "cursor --install-extension ./theme.vsix || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m install:cursor failed')\"",
+    "install:windsurf": "windsurf --install-extension ./theme.vsix || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m install:windsurf failed')\"",
     "install:all": "npm run install:code && npm run install:cursor && npm run install:windsurf",
     "uninstall:code": "code --uninstall-extension mazhugasergei.the-theme || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m uninstall:code failed')\"",
     "uninstall:cursor": "cursor --uninstall-extension mazhugasergei.the-theme || node -e \"console.error('\\x1b[41m ERROR \\x1b[0m uninstall:cursor failed')\"",
@@ -34,7 +34,8 @@
     "reinstall:code": "npm run clean && npm run build && npm run uninstall:code && npm run install:code",
     "reinstall:cursor": "npm run clean && npm run build && npm run uninstall:cursor && npm run install:cursor",
     "reinstall:windsurf": "npm run clean && npm run build && npm run uninstall:windsurf && npm run install:windsurf",
-    "reinstall:all": "npm run uninstall:all && npm run clean && npm run build && npm run install:all"
+    "reinstall:all": "npm run uninstall:all && npm run clean && npm run build && npm run install:all",
+    "publish": "npm run clean && npm run build && vsce publish"
   },
   "dependencies": {
     "rimraf": "6.0.1",

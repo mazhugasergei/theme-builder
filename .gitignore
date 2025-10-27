@@ -3,6 +3,7 @@ dist/
 *.vsix
 out/
 themes/
+the-theme-0.0.1.vsix
 
 # macOS system files
 .DS_Store
