@@ -56,7 +56,7 @@ npm run install:cursor
 npm run install:windsurf
 ```
 
-### Uninstall the theme extension from all installed editors
+## Uninstall the theme extension from all installed editors
 
 ```bash
 npm run uninstall:all
