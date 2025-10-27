@@ -4,6 +4,8 @@ This is a custom theme builder and installer for Visual Studio Code / Cursor / W
 
 ## Installation
 
+Install dependencies:
+
 ```bash
 npm install
 ```
@@ -13,15 +15,15 @@ npm install
 For all installed editors:
 
 ```bash
-npm run refresh
+npm run reinstall:all
 ```
 
 Or individually:
 
 ```bash
-npm run refresh:code
-npm run refresh:cursor
-npm run refresh:windsurf
+npm run reinstall:code
+npm run reinstall:cursor
+npm run reinstall:windsurf
 ```
 
 ### Manual Install
@@ -41,21 +43,21 @@ npm run build
 #### 2. Install the theme extension to all installed editors
 
 ```bash
-npm run apply
+npm run install:all
 ```
 
 Or individually:
 
 ```bash
-npm run apply:code
-npm run apply:cursor
-npm run apply:windsurf
+npm run install:code
+npm run install:cursor
+npm run install:windsurf
 ```
 
 #### Uninstall the theme extension from all installed editors
 
 ```bash
-npm run uninstall
+npm run uninstall:all
 ```
 
 Or individually:
